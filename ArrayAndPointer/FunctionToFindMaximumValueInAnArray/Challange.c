@@ -6,6 +6,7 @@ The function should find and return the maximum value in the array.
 #include <stdio.h>
 
 int maxValue(int *arr, int size){
+    if(size <= 0) return -1;
     int max = arr[0];
     for(int i = 1; i < size; i++){
         if(arr[i] > max) max = arr[i];
